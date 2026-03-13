@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #2563eb;
+    --text-dark: #1f2937;
+    --bg-light: #f8fafc;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Photo Styling */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.skill-item {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid var(--primary-color);
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #6b7280;
+    font-style: italic;
+}
